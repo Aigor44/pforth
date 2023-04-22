@@ -1,4 +1,6 @@
 #!/bin/bash
+
+rm -f *.o *.eo pforth pforth.dic pforth_standalone
  
 # CC="gcc -m31"
   CC="gcc -m32"
@@ -25,3 +27,5 @@ ${CC} -c ${CFLAGS} ../../csrc/pfcompil.c
 ${CC} -c ${CFLAGS} ../../csrc/pfcustom.c
  
 ${CC} -o pforth_standalone *.o -lm
+
+rm -f *.o
