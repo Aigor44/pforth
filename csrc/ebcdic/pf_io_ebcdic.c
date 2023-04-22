@@ -149,6 +149,8 @@ void sdTerminalTerm( void )
 {
 }
 
+#include <time.h>
+
 cell_t sdSleepMillis(cell_t msec)
 {
     int milliseconds = (int) msec;
