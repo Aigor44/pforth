@@ -81,6 +81,12 @@
     #define pfDeleteDictionary         pfDelDic
     #define pfDeleteTask               pfDelTask
     #define pfReportError              pfRepError
+    #define sdTerminalEcho             sd1TerminalEcho
+    #define sdTerminalFlush            sd2TerminalFlush
+    #define sdTerminalIn               sd3TerminalIn
+    #define sdTerminalInit             sd4TerminalInit
+    #define sdTerminalOut              sd5TerminalOut
+    #define sdTerminalTerm             sd6TerminalTerm
 #endif
  
 #if defined(PF_USER_INC1)
