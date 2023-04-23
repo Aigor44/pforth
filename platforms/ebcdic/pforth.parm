@@ -1,1 +1,1 @@
--o dd:out - -S -std=c99 -DPF_SUPPORT_FP -DPF_STATIC_DIC -DEBCDIC
+-o dd:out - -S -std=c99 -DPF_SUPPORT_FP -DPF_STATIC_DIC -DEBCDIC -D__GCCCMS__
