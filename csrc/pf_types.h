@@ -26,7 +26,7 @@
 ** Type Declarations
 ***************************************************************/
 
-#if !defined(AMIGA) && !defined(ATARI)
+#if !defined(AMIGA) && !defined(ATARI) && !defined(__GCCCMS__) 
 #include <sys/types.h>
 #endif
 
