@@ -7,7 +7,7 @@ rm -f *.o *.eo pforth pforth.dic pforth_standalone
 # CC="gcc"
 
 # CFLAGS="-g -O0 -I. -DPF_SUPPORT_FP -DPF_STATIC_DIC -DEBCDIC"
-  CFLAGS="-g -O0 -I. -DPF_SUPPORT_FP -DPF_STATIC_DIC"
+  CFLAGS="-g -O0 -I. -DPF_SUPPORT_FP -DPF_STATIC_DIC -D__GCCCMS__"
 
 ${CC} -c ${CFLAGS} ../../csrc/pf_cglue.c
 ${CC} -c ${CFLAGS} ../../csrc/pf_clib.c
