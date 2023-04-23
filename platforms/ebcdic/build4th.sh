@@ -66,5 +66,6 @@ vma -at pforth.vmarc \
   ../../csrc/pfinnrfp.h \
   ../../csrc/pforth.h \
   pforth.parm \
+  pfdicdat.h \
   build4th.exec
 
