@@ -42,6 +42,41 @@
     #define PF_USER_INC2     "pf_win32.h"
 #endif
 
+#ifdef __GCCCMS__
+    #define pfCharToUpper              pfC2U
+    #define pfCharToLower              pfC2T
+    #define gCurrentTask               gCTask
+    #define gCurrentDictionary         gCDic
+    #define gVarTraceLevel             gVTL
+    #define gVarTraceStack             gVTS
+    #define gVarTraceFlags             gVTF
+    #define pfCreateTask               pfCTask
+    #define pfCreateDictionary         pfCreDic
+    #define pfDeleteDictionary         pfDelDic
+    #define pfDeleteTask               pfDelTask
+    #define ffCompareTextCaseN         ffCmpTextCaseN
+    #define ffCompare                  ffCmp
+    #define CreateDicEntry             CrDicEntry
+    #define CreateDicEntryC            cCrDicEntry
+    #define ffCreateSecondaryHeader    ffCrSecondaryHeader
+    #define ffStringColon              ffStringColon
+    #define ffStringCreate             ffStrCreate
+    #define ffConvertStreamToSourceID  ff1ConvertStreamToSourceID
+    #define ffConvertSourceIDToStream  ff2ConvertSourceIDToStream
+    #define ReadLongBigEndian          Read1LongBigEndian
+    #define ReadLongLittleEndian       Read2LongLittleEndian
+    #define ReadShortBigEndian         Read1ShortBigEndian
+    #define ReadShortLittleEndian      Read2ShortLittleEndian
+    #define WriteFloatBigEndian        Write1FloatBigEndian
+    #define WriteFloatLittleEndian     Write2FloatLittleEndian
+    #define ReadFloatBigEndian         Read1FloatBigEndian
+    #define ReadFloatLittleEndian      Read2FloatLittleEndian
+    #define WriteLongBigEndian         Write1LongBigEndian
+    #define WriteLongLittleEndian      Write2LongLittleEndian
+    #define WriteShortBigEndian        Write1ShortBigEndian
+    #define WriteShortLittleEndian     Write2ShortLittleEndian
+#endif    
+
 #if defined(PF_USER_INC1)
     #include PF_USER_INC1
 #else
