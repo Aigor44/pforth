@@ -15,7 +15,6 @@ ${CC} -c ${CFLAGS} ../../csrc/pf_clib.c
 ${CC} -c ${CFLAGS} ../../csrc/pf_core.c
 ${CC} -c ${CFLAGS} ../../csrc/pf_inner.c
 ${CC} -c ${CFLAGS} ../../csrc/pf_io.c
-${CC} -c ${CFLAGS} ../../csrc/pf_io_none.c
 ${CC} -c ${CFLAGS} ../../csrc/ebcdic/pf_io_ebcdic.c
 ${CC} -c ${CFLAGS} ../../csrc/stdio/pf_fileio_stdio.c
 ${CC} -c ${CFLAGS} ../../csrc/pf_main.c
@@ -38,7 +37,7 @@ vma -at pforth.vmarc \
   ../../csrc/pf_core.c \
   ../../csrc/pf_inner.c \
   ../../csrc/pf_io.c \
-  ../../csrc/pf_io_none.c,pfionone.c \
+  ../../csrc/ebcdic/pf_io_ebcdic.c,pfioebcd.c \
   ../../csrc/stdio/pf_fileio_stdio.c,pffileio.c \
   ../../csrc/pf_main.c \
   ../../csrc/pf_mem.c \
