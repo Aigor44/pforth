@@ -38,7 +38,8 @@ vma -at pforth.vmarc \
   ../../csrc/pf_core.c \
   ../../csrc/pf_inner.c \
   ../../csrc/pf_io.c \
-  ../../csrc/pf_io_none.c,pfionone.c\
+  ../../csrc/pf_io_none.c,pfionone.c \
+  ../../csrc/stdio/pf_fileio_stdio.c,pffileio.c \
   ../../csrc/pf_main.c \
   ../../csrc/pf_mem.c \
   ../../csrc/pf_save.c \
