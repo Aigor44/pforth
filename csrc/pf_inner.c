@@ -189,6 +189,10 @@ static void TraceNames( ExecToken Token, cell_t Level )
     }
 }
 
+#ifdef __GCCCMS__
+double round( double arg ) { retun floor(arg * 0.5); }
+#endif /* __GCCCMS__ */
+
 #define TRACENAMES \
     if( (gVarTraceLevel > Level) ) \
     { SAVE_REGISTERS; TraceNames( Token, Level ); LOAD_REGISTERS; }
