@@ -24,11 +24,6 @@
 
 typedef double PF_FLOAT;
 
-#ifdef __GCCCMS__
-double round( double arg ) { return floor(arg * 0.5); }
-#endif /* __GCCCMS__ */
-
-
 /* Define pForth specific math functions. */
 
 #define fp_acos   acos

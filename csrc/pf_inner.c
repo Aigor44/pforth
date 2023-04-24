@@ -31,6 +31,10 @@
 
 #include "pf_all.h"
 
+#ifdef __GCCCMS__
+double round( double arg ) { return floor(arg * 0.5); }
+#endif /* __GCCCMS__ */
+
 #if defined(WIN32) && !defined(__MINGW32__)
 #include <crtdbg.h>
 #endif
