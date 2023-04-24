@@ -87,6 +87,8 @@
     #define sdTerminalInit             sd4TerminalInit
     #define sdTerminalOut              sd5TerminalOut
     #define sdTerminalTerm             sd6TerminalTerm
+
+    extern double round( double arg ); /* this is not declared in GCCCMS; let's abuse a little of this section to declare it */
 #endif
  
 #if defined(PF_USER_INC1)

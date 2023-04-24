@@ -149,16 +149,16 @@ void sdTerminalTerm( void )
 {
 }
 
-#include <time.h>
+//#include <time.h>
 
 cell_t sdSleepMillis(cell_t msec)
 {
-    int milliseconds = (int) msec;
-    struct timespec rem;
-    struct timespec req = {
-       (milliseconds / 1000),             /* secs (Must be Non-Negative) */ 
-       (milliseconds % 1000) * 1000000    /* nano (Must be in range of 0 to 999999999) */ 
-    };
-    nanosleep(&req , &rem);
+//  int milliseconds = (int) msec;
+//  struct timespec rem;
+//  struct timespec req = {
+//     (milliseconds / 1000),             /* secs (Must be Non-Negative) */ 
+//     (milliseconds % 1000) * 1000000    /* nano (Must be in range of 0 to 999999999) */ 
+//  };
+//  nanosleep(&req , &rem);
     return 0;
 }
